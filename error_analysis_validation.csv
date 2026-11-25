@@ -1,0 +1,11 @@
+set,frame,ref,pred,missed,merged_extra,split_markers,false_pos_labels
+val_final,6,23,18,10,0,3,5
+val_final,39,24,25,8,0,4,9
+val_final,48,24,24,8,0,4,8
+val_final,70,21,26,5,0,2,10
+val_final,75,21,23,5,0,3,7
+val_baseline,6,23,11,13,0,1,1
+val_baseline,39,24,16,10,0,2,2
+val_baseline,48,24,17,9,0,2,2
+val_baseline,70,21,21,6,0,3,6
+val_baseline,75,21,16,6,0,1,1

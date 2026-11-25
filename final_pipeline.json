@@ -1,0 +1,160 @@
+{
+  "final_pipeline_name": "Pipeline B",
+  "final_pipeline": {
+    "intensity": {
+      "clip": 1.0,
+      "method": "clahe",
+      "tile": 8
+    },
+    "filters": [
+      {
+        "k": 5,
+        "method": "gauss"
+      },
+      {
+        "method": "sharpen"
+      }
+    ],
+    "segmentation": {
+      "method": "otsu"
+    },
+    "morphology": [
+      {
+        "op": "fill"
+      }
+    ],
+    "split": {
+      "method": "watershed",
+      "min_distance": 27,
+      "sigma": 4
+    },
+    "min_area": 50
+  },
+  "baseline": {
+    "intensity": {
+      "method": "none"
+    },
+    "filters": [],
+    "segmentation": {
+      "method": "otsu"
+    },
+    "morphology": [],
+    "split": {
+      "method": "none"
+    },
+    "min_area": 50
+  },
+  "candidates": {
+    "Pipeline A": {
+      "intensity": {
+        "clip": 1.0,
+        "method": "clahe",
+        "tile": 8
+      },
+      "filters": [
+        {
+          "k": 5,
+          "method": "gauss"
+        },
+        {
+          "method": "sharpen"
+        }
+      ],
+      "segmentation": {
+        "method": "otsu"
+      },
+      "morphology": [
+        {
+          "op": "fill"
+        }
+      ],
+      "split": {
+        "method": "none"
+      },
+      "min_area": 50
+    },
+    "Pipeline B": {
+      "intensity": {
+        "clip": 1.0,
+        "method": "clahe",
+        "tile": 8
+      },
+      "filters": [
+        {
+          "k": 5,
+          "method": "gauss"
+        },
+        {
+          "method": "sharpen"
+        }
+      ],
+      "segmentation": {
+        "method": "otsu"
+      },
+      "morphology": [
+        {
+          "op": "fill"
+        }
+      ],
+      "split": {
+        "method": "watershed",
+        "min_distance": 27,
+        "sigma": 4
+      },
+      "min_area": 50
+    },
+    "Pipeline C": {
+      "intensity": {
+        "clip": 1.0,
+        "method": "clahe",
+        "tile": 8
+      },
+      "filters": [
+        {
+          "k": 5,
+          "method": "gauss"
+        },
+        {
+          "method": "sharpen"
+        }
+      ],
+      "segmentation": {
+        "method": "fixed",
+        "t": 36
+      },
+      "morphology": [
+        {
+          "op": "fill"
+        }
+      ],
+      "split": {
+        "method": "watershed",
+        "min_distance": 27,
+        "sigma": 4
+      },
+      "min_area": 50
+    }
+  },
+  "histogram_match_reference": {
+    "sequence": "01",
+    "frame": 29
+  },
+  "uint8_scale": null,
+  "seed": 31085,
+  "student_id_last5": "29059",
+  "selection_rule": "min val MAE → RMSE → time → complexity",
+  "locked_at_utc": "2026-11-25T14:00:02.744144+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "opencv": "5.0.0",
+    "scipy": "1.18.1",
+    "scikit-image": "0.26.0",
+    "matplotlib": "3.11.2",
+    "tifffile": "2026.9.20",
+    "imagecodecs": "2026.11.11",
+    "platform": "Linux-6.18.44-fc-v880-x86_64-with-glibc2.39",
+    "seed": 31085
+  }
+}
