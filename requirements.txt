@@ -1,0 +1,9 @@
+# Google Colab'daki hazır sürümlerle çalışır. Çalıştırılan ortamın gerçek sürümleri environment.json dosyasına yazılır.
+numpy>=1.24
+pandas>=2.0
+opencv-python-headless>=4.8
+scipy>=1.10
+scikit-image>=0.21
+matplotlib>=3.7
+tifffile>=2023.1
+imagecodecs>=2023.1
