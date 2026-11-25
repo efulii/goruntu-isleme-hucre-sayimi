@@ -1,0 +1,7 @@
+# Veri seti ve veri görüntüsü içeren çıktılar GitHub'a yüklenmez (ödev kuralı 18.5)
+data/
+*.zip
+figures_private/
+results_bundle.zip
+.ipynb_checkpoints/
+__pycache__/
